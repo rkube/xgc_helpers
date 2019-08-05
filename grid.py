@@ -64,6 +64,7 @@ class xgc_mesh():
         """
         self.triangle_list = []
         self.num_triangles = conns.shape[0]
+        self.num_vertices = coords.shape[0]
         
         for tri in range(self.num_triangles):
             self.triangle_list.append(mesh_triangle_2d(conns[tri, 0], 
